@@ -1,0 +1,104 @@
+@import "reset.scss";
+/*DEBUG CSS*{
+    *{
+        : 1px solid red;
+    }
+*/
+.header{
+    width: 100%;
+    height:100vh;
+    background-image:
+    linear-gradient(to right, rgba(96, 160, 216, 0.5), rgba(178, 210, 52, 0.5)),
+    url(./assets/img/Header-background.png);
+    background-size: cover;
+    display: grid;
+    
+    a{
+            text-decoration: none;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 32px;
+        height: 69px;
+        &--logo{
+            width: 69px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+        }
+
+        &__item{
+            padding: 0 24px;
+            color: #ffff;
+            text-decoration: none;
+            font-family: 'Poppins Light';
+            font-size: 18px;
+            &--button{
+                background-color: #ffff;
+                color: #B2D234;
+                padding: 8px;
+                font-family: 'Poppins SemiBold';
+                font-size: 15px;
+                border: solid #ffff;
+                border-radius: 5px;
+            }
+            &::after{
+                content: '';
+                background-color: #ffff;
+                display: block;
+                width: 50%;
+                transition: width 0.5s ease;
+                height: 2px;
+                margin: 2px auto;
+            }
+        }
+
+    }
+
+    &__text{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        h1{
+            font-family: 'Poppins Medium';
+            font-size: 128px;
+            color: #ffff;
+        }
+        h2{
+            color: #ffff;
+            font-family: 'Poppins';
+            font-style: italic;
+            font-size: 54px;
+            line-height: 81px;
+            transform: rotate(-9deg);
+            position: relative;
+            left: 64px;
+        }
+    }
+    &__social{
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+       padding: 0 32px;
+       &--item{
+           padding: 16px;
+           font-size: 32px;
+           color: #ffff;
+       }
+    }
+}
+
+.salad{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/img/background-motif.png);
+    background-repeat: repeat;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+    
+}

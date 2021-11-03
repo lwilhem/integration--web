@@ -100,5 +100,14 @@
     grid-template-rows: 100%;
     grid-template-columns: 60% 40%;
     overflow: hidden;
-    
+    &__container{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    &__image{
+        grid-row: 1;
+        grid-column: 2;
+        display: flex;
+        align-items: flex-start;
+    }
 }

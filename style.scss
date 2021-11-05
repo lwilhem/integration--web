@@ -103,11 +103,52 @@
     &__container{
         grid-row: 1;
         grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 15%;
+ 
+    }
+    &__title{
+            font-family: 'Poppins';
+            font-weight: SemiBold;
+            font-size: 52px;
+            color: #B2D234;
+    }
+    &__text{
+        color: #606060;
+        font-family: 'Poppins';
+        font-size: 18px;
+        letter-spacing: 1px;
+        width: 500px;
+        padding: 16px 0;
+    }
+    &__link{
+        width: 256px;
+        height: 61px;
+        background-color: #B2D234;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 32px 0;
+        a{
+            text-decoration: none;
+            color: #ffff;
+            font-family: 'Poppins';
+            font-size: 24px;
+            font-weight: 600;
+
+        }
+        #salad__link__icon{
+            font-size: 24px;
+            padding: 8px;
+        }
     }
     &__image{
-        grid-row: 1;
-        grid-column: 2;
-        display: flex;
-        align-items: flex-start;
+        position: relative;
+        right: 120px;
+        bottom: 0;
     }
 }
